@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mesa Azul - Chef Privado</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: 'Georgia', serif;
+background-color: #f0f4f8;
+color: #1e2a44;
+line-height: 1.6;
+}
+/* Header */
+header {
+background: linear-gradient(to right, #1e3a8a, #3b82f6);
+color: white;
+text-align: center;
+padding: 50px 20px;
+position: relative;
+overflow: hidden;
+}
+header h1 {
+font-size: 48px;
+letter-spacing: 2px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+header p {
+font-size: 20px;
+margin-top: 10px;
+}
+/* Navegación */
+nav {
+background-color: #1e2a44;
+padding: 15px 0;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+nav ul {
+list-style: none;
+text-align: center;
+}
+nav ul li {
+display: inline;
+margin: 0 20px;
+}
+nav ul li a {
+color: white;
+text-decoration: none;
+font-size: 18px;
+transition: color 0.3s;
+}
+nav ul li a:hover {
+color: #93c5fd;
+}
+/* Contenedor principal */
+.container {
+max-width: 1100px;
+margin: 40px auto;
+padding: 0 20px;
+}
+.section {
+background-color: white;
+padding: 30px;
+margin-bottom: 30px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.section-title {
+font-size: 32px;
+color: #1e3a8a;
+margin-bottom: 20px;
+border-bottom: 2px solid #93c5fd;
+display: inline-block;
+}
+.section p {
+font-size: 18px;
+margin-bottom: 15px;
+}
+.services-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 20px;
+}
+.service-item {
+background-color: #e6f0fa;
+padding: 20px;
+border-radius: 8px;
+text-align: center;
+}
+.service-item h3 {
+color: #1e2a44;
+font-size: 24px;
+margin-bottom: 10px;
+}
+/* Contacto */
+.contact-form {
+display: flex;
+flex-direction: column;
+gap: 15px;
+max-width: 500px;
+margin: 0 auto;
+}
+.contact-form input, .contact-form textarea {
+padding: 10px;
+font-size: 16px;
+border: 1px solid #93c5fd;
+border-radius: 5px;
+}
+.contact-form button {
+background-color: #1e3a8a;
+color: white;
+padding: 12px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 18px;
+transition: background-color 0.3s;
+}
+.contact-form button:hover {
+background-color: #3b82f6;
+}
+/* Footer */
+footer {
+background-color: #1e2a44;
+color: white;
+text-align: center;
+padding: 20px;
+margin-top: 40px;
+}
+footer a {
+color: #93c5fd;
+text-decoration: none;
+}
+/* Responsive */
+@media (max-width: 768px) {
+header h1 {
+font-size: 36px;
+}
+nav ul li {
+display: block;
+margin: 10px 0;
+}
+.services-grid {
+grid-template-columns: 1fr;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Mesa Azul</h1>
+<p>Experiencias culinarias privadas en la Costa Blanca</p>
+</header>
+<nav>
+<ul>
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#servicios">Servicios</a></li>
+<li><a href="#nosotros">Sobre Nosotros</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+</nav>
+<div class="container">
+<div class="section" id="inicio">
+<h2 class="section-title">Bienvenidos a Mesa Azul</h2>
+<p>En Mesa Azul, transformamos tu hogar en un escenario de alta gastronomía. Disfruta de menús personalizados con los sabores frescos del Mediterráneo, diseñados exclusivamente para ti y tus invitados.</p>
+</div>
+<div class="section" id="servicios">
+<h2 class="section-title">Nuestros Servicios</h2>
+<div class="services-grid">
+<div class="service-item">
+<h3>Cena Privada</h3>
+<p>Un menú de 3 platos a partir de 75 € por persona, perfecto para una velada íntima.</p>
+</div>
+<div class="service-item">
+<h3>Experiencia Gourmet</h3>
+<p>5 platos con maridaje opcional desde 120 € por persona, una experiencia inolvidable.</p>
+</div>
+<div class="service-item">
+<h3>Chef en Residencia</h3>
+<p>Servicio completo para vacaciones, desde 500 € por día. Cocina diaria a tu medida.</p>
+</div>
+</div>
+</div>
+<div class="section" id="nosotros">
+<h2 class="section-title">Sobre Nosotros</h2>
+<p>Somos un equipo apasionado por la cocina mediterránea, comprometidos con la calidad y la sostenibilidad. Inspirados por Jávea y Dénia, llevamos la esencia del mar y la montaña a tu mesa.</p>
+</div>
+<div class="section" id="contacto">
+<h2 class="section-title">Contáctanos</h2>
+<form class="contact-form">
+<input type="text" placeholder="Nombre" required>
+<input type="email" placeholder="Correo Electrónico" required>
+<textarea placeholder="Tu mensaje" rows="5" required></textarea>
+<button type="submit">Enviar</button>
+</form>
+</div>
+</div>
+<footer>
+<p>© 2025 Mesa Azul - Jávea y Dénia | <a href="mailto:info@mesaazul.com">info@mesaazul.com</a></p>
+</footer>
+</body>
+</html>
+​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
